@@ -113,7 +113,7 @@ const showNotes = () => {
     noteCount = 0
     notesArray.map((element, index) => {
         noteCount++
-        notesDiv.innerHTML = `
+        notesDiv.innerHTML += `
  <div class="single-card">
       <div
         class="col"
