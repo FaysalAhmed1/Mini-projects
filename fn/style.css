@@ -1,124 +1,251 @@
+
+/* Universal css design for the page */
 body{
-font-family: 'Rubik', sans-serif;
-margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
 }
-h1{
-    font-size: 55px;
+.a{
+    text-decoration: none;
 }
 
-.highlight{
-    color: rgb(250, 105, 69);
-}
-.flexible-container{
+/* end  */
+
+/* Header Part */
+.front{
+
     display: flex;
-    padding-bottom: 100px;
-}
-.section2{
-    
-    background-image: url(images/shapes/7.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    padding: 100px 150px;
+    overflow: hidden;
+    background: #2D25A0;
     
 }
-
-.half-width{
+.messege{
     width: 50%;
-    padding-left: 5%;
-    padding-top: 10%;
-    color: rgb(97, 97, 97);
+    font-size: 64px;
+    color: white;
 }
-.half-width img{
-    width: 70%;
-    padding-left: 10%;
+.messege a{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+
+   font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+.messege a i{
+    size: 24px;
+    padding-left:20px;
+}
+.banner img{
+    width: 700px;
+   
+    transition: width 5s ease 1s, transform 5s ;
 }
 
-.half-width p{
+.banner img:hover{
+    width: 700px;
+    transform: rotate(360deg);
+}
+
+/* End of header */
+
+/* Design for Body section */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    padding: 5% 15%;
+}
+.player{
+    text-align: left;
+   padding: 5%;
+ 
+}
+.player img{
+    
+    width:100%;
+    height: 300px;
+    display: 100%;
+}
+.player h3{
+    font-size: 28px;
+    margin: 0px;
+    text-align: left;
+}
+.player p{
+    font-size: 16px;
+    width: 400px;
+    text-align: left;
+    white-space: pre-line;
+    color: #6C6C6C;
+}
+
+/* Blog Design */
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(182, 226, 255);
+    margin-bottom: 100px;
+}
+
+.blog{
+    display: flex;  
+    padding: 10px;
+}
+.blog .thumbnail img{
+    width: 400px;
+    height: 300px;
+ 
+}
+.blog-info{
+    margin-left: 15px;
+}
+.blog-info a{
+    text-decoration: none;
+    color: #ff5722;
+}
+.blog-head{
+    font-size: 48px;
+    text-align: center;
+    color: rgb(56, 159, 207);
+}
+.blog-head h2{
+    text-align: center;
+}
+
+.blog p{
+    color: rgb(21, 194, 194);
+    white-space: pre-line;
+}
+
+/* Blog Design ends */
+
+/* Newsteller Design */
+.newsteller{
+    display: flex;
+    justify-content: center;
     margin-bottom: 50px;
 }
-.fraction-width{
-    width: 30%;
-    padding: 3%;
-    margin-left: 1%;
-    margin-right: 1%;
-    box-shadow: 5px 10px 20px grey;
 
+.signup{
+    display: flex;
+    flex-direction: column;
+    background-color: #756cfabe;
+    padding: 20px 150px;
+    border-radius: 5%;
 }
-.fraction-width img{
-    width: 80%;
-    border-radius: 10%;
-}
-
-.recepie{
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center;
-    color: rgb(97, 97, 97);
-}
-.shop{
-    text-decoration: none;
-    background-image: radial-gradient( orange, red);
-    padding: 10px 50px;
-    margin-top: 50px;
-    border-radius: 40px;
-    color: white;
-    font-weight: 400;
-}
-
-.achievements{
-    width: 90%;
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.footer{
-    color: white;
-    background-color: black;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    text-align: center;
+.signup input, button{
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
     
 }
 
-.review{
-    background-color: rgba(236, 82, 11, 0.507);
-    padding-top: 50px;
-    border-radius: 5%;
+.signup button{
+    background-color: rgba(14, 35, 82, 0.877);
+    color: white;
+    font-weight: 600;
+}
+/* End of newsteller */
+
+/* End of body Section */
+
+/* Design for Tablet and similar screens */
+.footer{
+    text-align: center;
+    
+}
+.logo{
+    padding-bottom: 20px;
+}
+
+.footer a{
+    color: rgb(149, 149, 168);
+    
+    padding:10px;
+    background-color: rgb(225, 233, 255);
    
-}
-
-.review h2{
-    text-align: center;
-}
-.review img{
-    max-width: 100%;
-    height: auto;
-    background-color: rgb(0, 0, 0);
-    padding: 10px;
     border-radius: 50%;
+    margin: 0 7px;;
+}
+.footer a i{
+    width: 32px;
+    height: 32px;
+    
+}
+.copyright{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    
 }
 
 
-.footer-span1{
-    color: rgba(211, 90, 9, 0.863);
-}
-.footer-span2{
-    color: grey
+
+/* Media design for Tablet and similar screens */
+
+@media (max-width: 800px) {
+    
+    .front{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0px 0px;
+    }
+    .messege{
+        width: 100%;
+        font-size: 25px;
+        padding-bottom: 20px;
+        padding: 30px 0px;
+    
+    }
+    .messege a{
+      
+        padding: 0px 5px;
+    
+       font-size: 16px;
+       
+    }
+    .banner img{
+       width: 300px;
+    }
+
+    .players{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .blog{
+        flex-direction: column;
+    }
+    .logo img{
+        width: 300px;
+      
+
+    }
+    
 }
 
-.header {
-    overflow: hidden;
-    background-color: rgba(241, 76, 35, 0.863);
-  }
-.header ul li{
-    display: inline;
+/* Media design for Mobile and similar screens */
+
+@media (max-width: 500px) {
+
+    .banner img{
+        width: 300px;
+       
+        transition: width 5s ease 1s, transform 5s ;
+    }
+    
+    
+    .banner img:hover{
+        width: 300px;
+        transform: rotate(360deg);
+    }
+    .blog{
+        padding: 0px;
+    }
 }
-.header a {
-    display: inline;
-    float: left;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px 25px;
-    text-decoration: none;
-    font-size: 20px;
-  }
