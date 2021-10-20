@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "1",
+    "picture": "https://i.ibb.co/0JfxF7n/2.jpg",
+    "index": 0,
+    "name": "Regular Checkup",
+    "description": "Castro French",
+    "price": 20
+  },
+  {
+    "_id": "2",
+    "picture": "https://i.ibb.co/Z1nHz73/Senior-men-having-her-eyes-checked-at-young-male-ophthalmologist.jpg",
+    "index": 1,
+    "name": "Detailed Consults",
+    "description": "Estella Gonzalez",
+    "price": 35
+  },
+  {
+    "_id": "3",
+    "picture": "https://i.ibb.co/qs7Jwdr/Glasses-and-eye-chart-on-white-background.jpg",
+    "index": 2,
+    "name": "Serive 13",
+    "description": "Glass gallary",
+    "price": 34
+  },
+  {
+    "_id": "4",
+    "picture": "https://i.ibb.co/G5XMvh7/Female-optician-working-at-optic-store.jpg",
+    "index": 3,
+    "name": "Serive 14",
+    "description": "Power adjustment",
+    "price": 27
+  },
+  {
+    "_id": "5",
+    "picture": "https://i.ibb.co/dm1QXpJ/Ophthalmologist-holding-a-model-of-a-human-eyeball-while-consulting-his-elderly-patient-during-a-med.jpg",
+    "index": 4,
+    "name": "Serive 15",
+    "description": "Surgery Consults",
+    "price": 31
+  },
+  {
+    "_id": "6",
+    "picture": "https://i.ibb.co/Pgp0SVG/6.jpg",
+    "index": 4,
+    "name": "Serive 16",
+    "description": "Eye Surgery",
+    "price": 31
+  }
+]
